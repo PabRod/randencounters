@@ -1,0 +1,7 @@
+# Default ignores in R project
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+# Ignore my personal list
+data/list_personal.txt
