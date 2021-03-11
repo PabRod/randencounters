@@ -3,4 +3,4 @@ source('R/auxs.R')
 
 print(get_one())
 
-print(make_groups())
+print(make_groups(group_size = 2))
