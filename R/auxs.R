@@ -1,7 +1,16 @@
-get_one <- function(names_location = 'data/list.txt') {
+read_people <- function(names_location = 'data/list.txt', remove.empty = TRUE) {
   # Load the list of people
   people <- readLines(names_location)
-  people <- people[sapply(people, nchar) > 0] # Remove empty lines, if any
+
+  # Remove empty lines, if any
+  if(remove.empty) people <- people[sapply(people, nchar) > 0]
+
+  return(people)
+}
+
+get_one <- function(names_location = 'data/list.txt') {
+  # Load the list of people
+  people <- read_people(names_location)
 
   # Choose one
   chosen_one <- sample(people, 1)
@@ -11,8 +20,7 @@ get_one <- function(names_location = 'data/list.txt') {
 
 make_groups <- function(names_location = 'data/list.txt', group_size = 2, padding = '') {
   # Load the list of people
-  people <- readLines(names_location)
-  people <- people[sapply(people, nchar) > 0] # Remove empty lines, if any
+  people <- read_people(names_location)
   n_people <- length(people)
 
   # Shuffle the list of people
