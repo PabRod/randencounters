@@ -1,15 +1,19 @@
 #' Read names list
 #'
 #' @param names_location Location of the names file
-#' @param remove.empty (default=TRUE) for ignoring empty lines in file
+#' @param rm.empty (default = TRUE) for ignoring empty lines in file
+#' @param rm.duplicates (default = TRUE) for removing duplicate entries
 #'
 #' @return A vector containing all the names
-read_people <- function(names_location = 'data/list.txt', remove.empty = TRUE) {
+read_people <- function(names_location = 'data/list.txt', rm.empty = TRUE, rm.duplicates = TRUE) {
   # Load the list of people
   people <- readLines(names_location)
 
   # Remove empty lines, if any
-  if(remove.empty) people <- people[sapply(people, nchar) > 0]
+  if(rm.empty) people <- people[sapply(people, nchar) > 0]
+
+  # Remove duplicates, if any
+  if(rm.duplicates) people <- unique(people)
 
   return(people)
 }

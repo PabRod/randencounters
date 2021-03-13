@@ -4,12 +4,18 @@
 \alias{read_people}
 \title{Read names list}
 \usage{
-read_people(names_location = "data/list.txt", remove.empty = TRUE)
+read_people(
+  names_location = "data/list.txt",
+  rm.empty = TRUE,
+  rm.duplicates = TRUE
+)
 }
 \arguments{
 \item{names_location}{Location of the names file}
 
-\item{remove.empty}{(default=TRUE) for ignoring empty lines in file}
+\item{rm.empty}{(default = TRUE) for ignoring empty lines in file}
+
+\item{rm.duplicates}{(default = TRUE) for removing duplicate entries}
 }
 \value{
 A vector containing all the names
