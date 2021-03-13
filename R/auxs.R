@@ -1,3 +1,9 @@
+#' Read names list
+#'
+#' @param names_location Location of the names file
+#' @param remove.empty (default=TRUE) for ignoring empty lines in file
+#'
+#' @return A vector containing all the names
 read_people <- function(names_location = 'data/list.txt', remove.empty = TRUE) {
   # Load the list of people
   people <- readLines(names_location)
@@ -8,6 +14,13 @@ read_people <- function(names_location = 'data/list.txt', remove.empty = TRUE) {
   return(people)
 }
 
+#' Get one
+#'
+#' @param names_location Location of the names file
+#' @param remove.empty (default=TRUE) for ignoring empty lines in file
+#'
+#' @return One random name from the names file
+#' @export
 get_one <- function(names_location = 'data/list.txt') {
   # Load the list of people
   people <- read_people(names_location)
@@ -18,6 +31,14 @@ get_one <- function(names_location = 'data/list.txt') {
   return(chosen_one)
 }
 
+#' Make groups
+#'
+#' @param names_location Location of the names file
+#' @param group_size Desired size for each group
+#' @param padding Character for empty slots
+#'
+#' @return The names, grouped
+#' @export
 make_groups <- function(names_location = 'data/list.txt', group_size = 2, padding = '') {
   # Load the list of people
   people <- read_people(names_location)

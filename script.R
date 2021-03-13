@@ -1,5 +1,6 @@
 rm(list = ls())
-source('R/auxs.R')
+
+library(randencounters)
 
 print(get_one())
 
