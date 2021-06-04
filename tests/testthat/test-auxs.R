@@ -1,5 +1,5 @@
 # Location of the test list
-loc <- "../../data/list.txt"
+loc <- "./data/list.txt"
 
 # ===============================================
 context("Read people")
