@@ -75,7 +75,7 @@ make_groups <- function(names_location = 'data/list.txt', group_size = 2, paddin
   # x x o
   # x x o
   # ...
-  #
+
   # We see that the number of groups relates to the number of people by:
   n_groups <- n_people %/% group_size
   n_slots <- n_groups * (group_size + 1) # + 1 because of the extra spot we may need
