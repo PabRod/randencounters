@@ -21,7 +21,6 @@ read_people <- function(names_location = 'data/list.txt', rm.empty = TRUE, rm.du
 #' Get one
 #'
 #' @param names_location Location of the names file
-#' @param remove.empty (default=TRUE) for ignoring empty lines in file
 #'
 #' @return One random name from the names file
 #' @export
