@@ -8,8 +8,6 @@ get_one(names_location = "data/list.txt")
 }
 \arguments{
 \item{names_location}{Location of the names file}
-
-\item{remove.empty}{(default=TRUE) for ignoring empty lines in file}
 }
 \value{
 One random name from the names file
