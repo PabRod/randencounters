@@ -5,7 +5,7 @@
 \title{Read names list}
 \usage{
 read_people(
-  names_location = "data/list.txt",
+  names_location = example_list_loc(),
   rm.empty = TRUE,
   rm.duplicates = TRUE
 )

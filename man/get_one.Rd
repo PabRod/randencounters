@@ -4,7 +4,7 @@
 \alias{get_one}
 \title{Get one}
 \usage{
-get_one(names_location = "data/list.txt")
+get_one(names_location = example_list_loc())
 }
 \arguments{
 \item{names_location}{Location of the names file}

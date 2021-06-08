@@ -1,11 +1,8 @@
-# Location of the test list
-loc <- "../../data/list.txt"
-
 # ===============================================
 context("Read people")
 
 test_that("Number", {
-  people <- read_people(loc)
+  people <- read_people()
   n <- length(people)
 
   expect_equal(n, 11)
@@ -15,7 +12,7 @@ test_that("Number", {
 context("Get one")
 
 test_that("Number", {
-  chosen_one <- get_one(loc)
+  chosen_one <- get_one()
   n <- length(chosen_one)
 
   expect_equal(n, 1)
@@ -25,7 +22,7 @@ test_that("Number", {
 context("Make groups")
 
 test_that("Dimensions", {
-  tab <- make_groups(loc, group_size = 3)
+  tab <- make_groups(group_size = 3)
   slots_per_group <- ncol(tab)
 
   expect_equal(slots_per_group, 4)

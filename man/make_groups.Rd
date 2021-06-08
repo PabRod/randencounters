@@ -4,7 +4,7 @@
 \alias{make_groups}
 \title{Make groups}
 \usage{
-make_groups(names_location = "data/list.txt", group_size = 2, padding = "")
+make_groups(names_location = example_list_loc(), group_size = 2, padding = "")
 }
 \arguments{
 \item{names_location}{Location of the names file}
