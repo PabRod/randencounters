@@ -1,4 +1,4 @@
-[![Build Status](https://github.com/PabRod/randencounters/workflows/R-CMD-check/badge.svg?branch=master)](https://github.com/PabRod/randencounters/actions)
+[![Build Status](https://github.com/PabRod/randencounters/workflows/R-CMD-check/badge.svg?branch=main)](https://github.com/PabRod/randencounters/actions)
 [![codecov](https://codecov.io/gh/PabRod/randencounters/graph/badge.svg)](https://codecov.io/gh/PabRod/randencounters)
 [![codecov](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
